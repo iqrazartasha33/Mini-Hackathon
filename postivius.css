@@ -1,0 +1,813 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin: 50px 60px;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 13%;
+  margin: 2% 5%;
+  gap: 20px;
+}
+
+.main img {
+  width: 100%;
+  margin: 0 1%;
+}
+
+.service {
+  display: flex;
+  width: 100%;
+  gap: 5%;
+}
+
+.service h3 {
+  background-color: #B9FF66;
+  margin: 10px 50px;
+  width: 19%;
+  height: 45px;
+  align-items: center;
+  justify-content: center;
+  place-content: center;
+  padding-top: 02px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+}
+
+.card-body {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  gap: 5%;
+  flex-wrap: wrap;
+
+
+}
+
+.card-body {
+  width: 450px;
+  height: 310px;
+  border: 1px solid gray;
+  border-radius: 45px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #f3f3f3;
+}
+
+.card-body h1 {
+  padding-bottom: 70px;
+}
+
+
+ 
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f3f3f3;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 60%;
+  max-width: 1000px;
+  margin: 0 1.5rem;
+}
+
+form {
+  flex: 1;
+  max-width: 400px;
+}
+
+.radio-group {
+  margin-bottom: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  position: relative;
+}
+
+.radio-option input {
+  visibility: hidden;
+}
+
+.custom-radio {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  margin-right: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.radio-option input:checked + .custom-radio {
+  border-color: blue;
+  background-color: blue;
+} 
+
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+button {
+  background-color: black;
+  color: #f3f3f3;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+.decorative-elements {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
+}
+
+.black-star {
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.green-star {
+  width: 50px;
+  height: 50px;
+  background-color: #b3ff00;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  position: absolute;
+  top: 70%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}
+
+.footer {
+  background-color: #1b1c1e;
+  color: white;
+  padding: 40px 0;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .contact-box {
+  background-color: #5fc542;
+  color: #1b1c1e;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.footer .subscribe-form input[type="email"] {
+  border: 2px solid #5fc542;
+  border-radius: 5px;
+  padding: 10px;
+  flex: 1;
+  background-color: #1b1c1e;
+  color: white;
+}
+
+.footer .subscribe-form input[type="email"]::placeholder {
+  color: #6c757d;
+}
+
+.footer .subscribe-form button {
+  background-color: #5fc542;
+  border: none;
+  padding: 10px 20px;
+  color: #1b1c1e;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 20px;
+  display: flex;
+
+}
+
+.footer-bottom {
+  border-top: 1px solid #888;
+  padding-top: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer-bottom a {
+  color: white;
+  text-decoration: underline;
+}
+ /*Responsive in (max-width:320px)*/
+
+@media screen and (max-width: 320px) {
+  .navbar-brand img {
+    width: 25px;
+    height: 20px;
+  }
+
+  .navbar {
+    padding: 1rem;
+  }
+
+  .section1 h1 {
+    font-size: 1rem;
+  }
+
+  .section1 p {
+    font-size: 0.5rem;
+  }
+
+  .sectionimage img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .main {
+    max-width: 485px;
+    margin: 0 auto;
+  }
+
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .images img {
+    width: 100%;
+    max-width: 150px; /* Adjust image size based on layout preference */
+    margin-bottom: 10px;
+  }
+     
+  .form-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    width: 100%;
+    margin: 0 10%;
+}
+
+form {
+    max-width: 100%;
+}
+
+.radio-group {
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.input-group input, .input-group textarea {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+button {
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 1rem;
+}
+
+.decorative-elements {
+    display: none;
+}
+
+.container {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.col-lg-4, .col-md-6, .col-md-12 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.navbar-brand {
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+ul.list-unstyled {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+ul.list-unstyled li {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  margin: 10px 0;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+}
+
+.contact-box {
+  font-size: 1.2rem;
+}
+
+.subscribe-form {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.subscribe-form input, .subscribe-form button {
+  width: 100%;
+}
+
+.footer-bottom {
+  font-size: 0.8rem;
+}
+}
+
+
+
+/*Responsive in (max-width:485px)*/
+
+@media  screen and (max-width: 485px) {
+
+  body {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .section1 {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 15px;
+  }
+
+  .sectiontext {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .sectiontext h1 {
+    font-size: 2rem;
+  }
+
+  .sectiontext p {
+    font-size: 1rem;
+  }
+
+  .sectionimage {
+    margin: 0;
+    width: 100%;
+  }
+
+  .sectionimage img {
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-brand {
+    margin-bottom: 10px;
+  }
+  .main {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .images img {
+    width: 100%;
+    max-width: 150px;
+    margin-bottom: 10px;
+  }
+
+  
+    .images img {
+      width: 100%; 
+
+    }
+  
+  
+  .cards {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-body {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+  }
+
+.card-body img{
+  display: flex;
+  flex-wrap: wrap;
+  height: 50px;
+  width: 50px;
+}
+  
+.form-container {
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  width: 100%;
+  margin: 0 10%;
+  
+}
+
+form {
+  width: 100%;
+  max-width: none;
+}
+
+.radio-group {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+}
+
+.decorative-elements {
+  display: none; 
+}
+
+
+
+
+  .footer {
+    text-align: center;
+  }
+
+  .footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer .social-icons {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .footer .contact-box,
+  .footer p {
+    text-align: center;
+  }
+
+  .accordion-header button {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+}
+
+  /*Responsive in (max-width:767px) */
+
+   
+@media screen and  (max-width: 767px) {
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section1 {
+    flex-direction: column;
+    text-align: center;
+    margin: 20px 10px;
+  }
+
+  .section1 h1 {
+    font-size: 2rem;
+  }
+
+  .section1 p {
+    font-size: 1rem;
+  }
+
+  .section1 button {
+    width: 100%;
+  }
+  
+    
+  .main {
+    flex-direction: column;
+    width: 100%;
+    margin: 2% 0;
+    gap: 10px;
+  }
+
+  .main img {
+    width: 50%;
+    margin: 0 30%;
+  }
+
+
+
+
+    /*
+  .main {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .main img {
+    width: 80px;
+    margin: 5px;
+  } */
+
+  .service h3 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-body {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .cards h1 {
+    font-size: 1rem;
+    margin: 5% 10%;
+  }
+
+  .cards img {
+    width: 40%;
+    margin-right: 500px;
+  }
+
+  
+  .accordion-button {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+ 
+  .form-container {
+    flex-direction: column;
+    padding: 1rem;
+    width: 100%;
+}
+
+form {
+    width: 100%;
+}
+
+.decorative-elements {
+    display: none;
+}
+
+.radio-group {
+    justify-content: center;
+    gap: 1rem;
+}
+
+button {
+    width: 100%;
+    text-align: center;
+}
+
+  
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-body {
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .head h1 {
+    font-size: 24px; /* Adjust the heading font size for smaller screens */
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .bottom img {
+    width: 100%; /* Ensure image takes full width */
+    height: auto;
+  }
+
+  .btn {
+    margin: 20px auto; /* Center the button */
+    width: 100%; /* Full width button on smaller screens */
+  }
+ 
+}
+
+
+/*Responsive in (max-width:1024px)*/
+
+@media  screen and (max-width: 1024px) {
+
+  .section1 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+  }
+
+  .sectiontext {
+    margin: 0;
+    width: 100%;
+  }
+
+  .sectionimage {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .sectionimage img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .service h3 {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .service p {
+    margin: 0 20px;
+    text-align: center;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-body {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .accordion-item {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .form-container {
+    flex-direction: column;
+    width: 80%;
+    padding: 1.5rem;
+}
+
+form {
+    max-width: 100%;
+}
+
+.radio-group {
+    justify-content: center;
+}
+
+.decorative-elements {
+    margin-top: 2rem;
+}
+
+.black-star, .green-star {
+    width: 60px;
+    height: 60px;
+}
+
+.black-star {
+    left: 50%;
+    top: 40%;
+}
+
+.green-star {
+    left: 60%;
+    top: 80%;
+}
+
+  .footer {
+    padding: 20px 0;
+  }
+
+  .footer .contact-box,
+  .footer .subscribe-form,
+  .footer .social-icons {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .footer .social-icons a {
+    margin: 0 10px;
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
+
+  .navbar .container-fluid {
+    justify-content: space-between;
+  }
+
+  .navbar-collapse {
+    text-align: center;
+  }
+}
+
+
